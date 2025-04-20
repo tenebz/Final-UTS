@@ -1,0 +1,156 @@
+{"origin": "Lebak Bulus", "destination": "Fatmawati", "tarif": 4000}
+{"origin": "Lebak Bulus", "destination": "Cipete Raya", "tarif": 5000}
+{"origin": "Lebak Bulus", "destination": "Haji Nawi", "tarif": 6000}
+{"origin": "Lebak Bulus", "destination": "Blok A", "tarif": 7000}
+{"origin": "Lebak Bulus", "destination": "Blok M BCA", "tarif": 8000}
+{"origin": "Lebak Bulus", "destination": "ASEAN", "tarif": 9000}
+{"origin": "Lebak Bulus", "destination": "Senayan", "tarif": 10000}
+{"origin": "Lebak Bulus", "destination": "Istora Mandiri", "tarif": 11000}
+{"origin": "Lebak Bulus", "destination": "Bendungan Hilir", "tarif": 12000}
+{"origin": "Lebak Bulus", "destination": "Setiabudi Astra", "tarif": 13000}
+{"origin": "Lebak Bulus", "destination": "Dukuh Atas BNI", "tarif": 14000}
+{"origin": "Lebak Bulus", "destination": "Bundaran HI", "tarif": 14000}
+{"origin": "Fatmawati", "destination": "Lebak Bulus", "tarif": 4000}
+{"origin": "Fatmawati", "destination": "Cipete Raya", "tarif": 4000}
+{"origin": "Fatmawati", "destination": "Haji Nawi", "tarif": 5000}
+{"origin": "Fatmawati", "destination": "Blok A", "tarif": 6000}
+{"origin": "Fatmawati", "destination": "Blok M BCA", "tarif": 7000}
+{"origin": "Fatmawati", "destination": "ASEAN", "tarif": 7000}
+{"origin": "Fatmawati", "destination": "Senayan", "tarif": 9000}
+{"origin": "Fatmawati", "destination": "Istora Mandiri", "tarif": 9000}
+{"origin": "Fatmawati", "destination": "Bendungan Hilir", "tarif": 10000}
+{"origin": "Fatmawati", "destination": "Setiabudi Astra", "tarif": 11000}
+{"origin": "Fatmawati", "destination": "Dukuh Atas BNI", "tarif": 12000}
+{"origin": "Fatmawati", "destination": "Bundaran HI", "tarif": 13000}
+{"origin": "Cipete Raya", "destination": "Lebak Bulus", "tarif": 5000}
+{"origin": "Cipete Raya", "destination": "Fatmawati", "tarif": 4000}
+{"origin": "Cipete Raya", "destination": "Haji Nawi", "tarif": 3000}
+{"origin": "Cipete Raya", "destination": "Blok A", "tarif": 4000}
+{"origin": "Cipete Raya", "destination": "Blok M BCA", "tarif": 5000}
+{"origin": "Cipete Raya", "destination": "ASEAN", "tarif": 6000}
+{"origin": "Cipete Raya", "destination": "Senayan", "tarif": 7000}
+{"origin": "Cipete Raya", "destination": "Istora Mandiri", "tarif": 8000}
+{"origin": "Cipete Raya", "destination": "Bendungan Hilir", "tarif": 9000}
+{"origin": "Cipete Raya", "destination": "Setiabudi Astra", "tarif": 9000}
+{"origin": "Cipete Raya", "destination": "Dukuh Atas BNI", "tarif": 10000}
+{"origin": "Cipete Raya", "destination": "Bundaran HI", "tarif": 11000}
+{"origin": "Haji Nawi", "destination": "Lebak Bulus", "tarif": 6000}
+{"origin": "Haji Nawi", "destination": "Fatmawati", "tarif": 5000}
+{"origin": "Haji Nawi", "destination": "Cipete Raya", "tarif": 3000}
+{"origin": "Haji Nawi", "destination": "Blok A", "tarif": 3000}
+{"origin": "Haji Nawi", "destination": "Blok M BCA", "tarif": 4000}
+{"origin": "Haji Nawi", "destination": "ASEAN", "tarif": 5000}
+{"origin": "Haji Nawi", "destination": "Senayan", "tarif": 6000}
+{"origin": "Haji Nawi", "destination": "Istora Mandiri", "tarif": 7000}
+{"origin": "Haji Nawi", "destination": "Bendungan Hilir", "tarif": 8000}
+{"origin": "Haji Nawi", "destination": "Setiabudi Astra", "tarif": 8000}
+{"origin": "Haji Nawi", "destination": "Dukuh Atas BNI", "tarif": 9000}
+{"origin": "Haji Nawi", "destination": "Bundaran HI", "tarif": 10000}
+{"origin": "Blok A", "destination": "Lebak Bulus", "tarif": 7000}
+{"origin": "Blok A", "destination": "Fatmawati", "tarif": 6000}
+{"origin": "Blok A", "destination": "Cipete Raya", "tarif": 4000}
+{"origin": "Blok A", "destination": "Haji Nawi", "tarif": 3000}
+{"origin": "Blok A", "destination": "Blok M BCA", "tarif": 3000}
+{"origin": "Blok A", "destination": "ASEAN", "tarif": 4000}
+{"origin": "Blok A", "destination": "Senayan", "tarif": 5000}
+{"origin": "Blok A", "destination": "Istora Mandiri", "tarif": 6000}
+{"origin": "Blok A", "destination": "Bendungan Hilir", "tarif": 7000}
+{"origin": "Blok A", "destination": "Setiabudi Astra", "tarif": 7000}
+{"origin": "Blok A", "destination": "Dukuh Atas BNI", "tarif": 8000}
+{"origin": "Blok A", "destination": "Bundaran HI", "tarif": 9000}
+{"origin": "Blok M BCA", "destination": "Lebak Bulus", "tarif": 8000}
+{"origin": "Blok M BCA", "destination": "Fatmawati", "tarif": 7000}
+{"origin": "Blok M BCA", "destination": "Cipete Raya", "tarif": 5000}
+{"origin": "Blok M BCA", "destination": "Haji Nawi", "tarif": 4000}
+{"origin": "Blok M BCA", "destination": "Blok A", "tarif": 3000}
+{"origin": "Blok M BCA", "destination": "ASEAN", "tarif": 3000}
+{"origin": "Blok M BCA", "destination": "Senayan", "tarif": 4000}
+{"origin": "Blok M BCA", "destination": "Istora Mandiri", "tarif": 5000}
+{"origin": "Blok M BCA", "destination": "Bendungan Hilir", "tarif": 6000}
+{"origin": "Blok M BCA", "destination": "Setiabudi Astra", "tarif": 6000}
+{"origin": "Blok M BCA", "destination": "Dukuh Atas BNI", "tarif": 7000}
+{"origin": "Blok M BCA", "destination": "Bundaran HI", "tarif": 8000}
+{"origin": "ASEAN", "destination": "Lebak Bulus", "tarif": 9000}
+{"origin": "ASEAN", "destination": "Fatmawati", "tarif": 7000}
+{"origin": "ASEAN", "destination": "Cipete Raya", "tarif": 6000}
+{"origin": "ASEAN", "destination": "Haji Nawi", "tarif": 5000}
+{"origin": "ASEAN", "destination": "Blok A", "tarif": 4000}
+{"origin": "ASEAN", "destination": "Blok M BCA", "tarif": 3000}
+{"origin": "ASEAN", "destination": "Senayan", "tarif": 3000}
+{"origin": "ASEAN", "destination": "Istora Mandiri", "tarif": 4000}
+{"origin": "ASEAN", "destination": "Bendungan Hilir", "tarif": 5000}
+{"origin": "ASEAN", "destination": "Setiabudi Astra", "tarif": 6000}
+{"origin": "ASEAN", "destination": "Dukuh Atas BNI", "tarif": 7000}
+{"origin": "ASEAN", "destination": "Bundaran HI", "tarif": 7000}
+{"origin": "Senayan", "destination": "Lebak Bulus", "tarif": 10000}
+{"origin": "Senayan", "destination": "Fatmawati", "tarif": 9000}
+{"origin": "Senayan", "destination": "Cipete Raya", "tarif": 7000}
+{"origin": "Senayan", "destination": "Haji Nawi", "tarif": 6000}
+{"origin": "Senayan", "destination": "Blok A", "tarif": 5000}
+{"origin": "Senayan", "destination": "Blok M BCA", "tarif": 4000}
+{"origin": "Senayan", "destination": "ASEAN", "tarif": 3000}
+{"origin": "Senayan", "destination": "Istora Mandiri", "tarif": 3000}
+{"origin": "Senayan", "destination": "Bendungan Hilir", "tarif": 3000}
+{"origin": "Senayan", "destination": "Setiabudi Astra", "tarif": 3000}
+{"origin": "Senayan", "destination": "Dukuh Atas BNI", "tarif": 4000}
+{"origin": "Senayan", "destination": "Bundaran HI", "tarif": 5000}
+{"origin": "Istora Mandiri", "destination": "Lebak Bulus", "tarif": 11000}
+{"origin": "Istora Mandiri", "destination": "Fatmawati", "tarif": 9000}
+{"origin": "Istora Mandiri", "destination": "Cipete Raya", "tarif": 8000}
+{"origin": "Istora Mandiri", "destination": "Haji Nawi", "tarif": 7000}
+{"origin": "Istora Mandiri", "destination": "Blok A", "tarif": 6000}
+{"origin": "Istora Mandiri", "destination": "Blok M BCA", "tarif": 5000}
+{"origin": "Istora Mandiri", "destination": "ASEAN", "tarif": 4000}
+{"origin": "Istora Mandiri", "destination": "Senayan", "tarif": 3000}
+{"origin": "Istora Mandiri", "destination": "Bendungan Hilir", "tarif": 3000}
+{"origin": "Istora Mandiri", "destination": "Setiabudi Astra", "tarif": 3000}
+{"origin": "Istora Mandiri", "destination": "Dukuh Atas BNI", "tarif": 4000}
+{"origin": "Istora Mandiri", "destination": "Bundaran HI", "tarif": 5000}
+{"origin": "Bendungan Hilir", "destination": "Lebak Bulus", "tarif": 12000}
+{"origin": "Bendungan Hilir", "destination": "Fatmawati", "tarif": 10000}
+{"origin": "Bendungan Hilir", "destination": "Cipete Raya", "tarif": 9000}
+{"origin": "Bendungan Hilir", "destination": "Haji Nawi", "tarif": 8000}
+{"origin": "Bendungan Hilir", "destination": "Blok A", "tarif": 7000}
+{"origin": "Bendungan Hilir", "destination": "Blok M BCA", "tarif": 6000}
+{"origin": "Bendungan Hilir", "destination": "ASEAN", "tarif": 5000}
+{"origin": "Bendungan Hilir", "destination": "Senayan", "tarif": 4000}
+{"origin": "Bendungan Hilir", "destination": "Istora Mandiri", "tarif": 3000}
+{"origin": "Bendungan Hilir", "destination": "Setiabudi Astra", "tarif": 3000}
+{"origin": "Bendungan Hilir", "destination": "Dukuh Atas BNI", "tarif": 3000}
+{"origin": "Bendungan Hilir", "destination": "Bundaran HI", "tarif": 4000}
+{"origin": "Setiabudi Astra", "destination": "Lebak Bulus", "tarif": 13000}
+{"origin": "Setiabudi Astra", "destination": "Fatmawati", "tarif": 11000}
+{"origin": "Setiabudi Astra", "destination": "Cipete Raya", "tarif": 9000}
+{"origin": "Setiabudi Astra", "destination": "Haji Nawi", "tarif": 8000}
+{"origin": "Setiabudi Astra", "destination": "Blok A", "tarif": 7000}
+{"origin": "Setiabudi Astra", "destination": "Blok M BCA", "tarif": 6000}
+{"origin": "Setiabudi Astra", "destination": "ASEAN", "tarif": 6000}
+{"origin": "Setiabudi Astra", "destination": "Senayan", "tarif": 4000}
+{"origin": "Setiabudi Astra", "destination": "Istora Mandiri", "tarif": 3000}
+{"origin": "Setiabudi Astra", "destination": "Bendungan Hilir", "tarif": 3000}
+{"origin": "Setiabudi Astra", "destination": "Dukuh Atas BNI", "tarif": 3000}
+{"origin": "Setiabudi Astra", "destination": "Bundaran HI", "tarif": 4000}
+{"origin": "Dukuh Atas BNI", "destination": "Lebak Bulus", "tarif": 14000}
+{"origin": "Dukuh Atas BNI", "destination": "Fatmawati", "tarif": 12000}
+{"origin": "Dukuh Atas BNI", "destination": "Cipete Raya", "tarif": 10000}
+{"origin": "Dukuh Atas BNI", "destination": "Haji Nawi", "tarif": 9000}
+{"origin": "Dukuh Atas BNI", "destination": "Blok A", "tarif": 8000}
+{"origin": "Dukuh Atas BNI", "destination": "Blok M BCA", "tarif": 7000}
+{"origin": "Dukuh Atas BNI", "destination": "ASEAN", "tarif": 7000}
+{"origin": "Dukuh Atas BNI", "destination": "Senayan", "tarif": 5000}
+{"origin": "Dukuh Atas BNI", "destination": "Istora Mandiri", "tarif": 4000}
+{"origin": "Dukuh Atas BNI", "destination": "Bendungan Hilir", "tarif": 3000}
+{"origin": "Dukuh Atas BNI", "destination": "Setiabudi Astra", "tarif": 3000}
+{"origin": "Dukuh Atas BNI", "destination": "Bundaran HI", "tarif": 3000}
+{"origin": "Bundaran HI", "destination": "Lebak Bulus", "tarif": 14000}
+{"origin": "Bundaran HI", "destination": "Fatmawati", "tarif": 13000}
+{"origin": "Bundaran HI", "destination": "Cipete Raya", "tarif": 11000}
+{"origin": "Bundaran HI", "destination": "Haji Nawi", "tarif": 10000}
+{"origin": "Bundaran HI", "destination": "Blok A", "tarif": 9000}
+{"origin": "Bundaran HI", "destination": "Blok M BCA", "tarif": 8000}
+{"origin": "Bundaran HI", "destination": "ASEAN", "tarif": 7000}
+{"origin": "Bundaran HI", "destination": "Senayan", "tarif": 6000}
+{"origin": "Bundaran HI", "destination": "Istora Mandiri", "tarif": 5000}
+{"origin": "Bundaran HI", "destination": "Bendungan Hilir", "tarif": 4000}
+{"origin": "Bundaran HI", "destination": "Setiabudi Astra", "tarif": 4000}
+{"origin": "Bundaran HI", "destination": "Dukuh Atas BNI", "tarif": 3000}
