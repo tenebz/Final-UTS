@@ -198,7 +198,7 @@
         <!--  TITLE  -->
         <h1 class="display-5 fw-semibold mb-4">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
         <!--  TRAIN IMAGE  -->
-        <img src="assets/images/MRT.PNG" alt="gambar" class="hero__train mb-4" />
+       <img src="images/MRT.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
       </div>
     </section>
 
