@@ -19,7 +19,6 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
             --primary: #0275d8;
@@ -411,76 +410,75 @@
         <!-- Page wrapper -->
         <div class="page-wrapper">
             <!-- Container fluid -->
-            <div class="container-fluid main-content-wrapper">
-                <div class="overlay">
-                    <!-- Bread crumb and page title -->
-                    <div class="row page-titles">
-                        <div class="col-md-12 align-self-center">
-                            <div class="page-header">
-                                <h1>Daftar Keberangkatan Kereta MRT Jakarta</h1>
-                                <div class="breadcrumb">
-                                    <a href="#">Home</a>
-                                    <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
-                                    <span>Jadwal</span>
-                                </div>
-                            </div>
+            <div class="container-fluid">
+                <!-- Bread crumb and page title -->
+                <div class="row page-titles">
+                    <div class="col-md-12 align-self-center">
+                        <div class="page-header">
+                        <h3 class="text-themecolor">Daftar Keberangkatan Kereta MRT Jakarta</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Jadwal</li>
+                        </ol>
                         </div>
                     </div>
-                    <!-- End Bread crumb and page title -->
+                </div>
+                </div>
+                <!-- End Bread crumb and page title -->
                     
-                    <!-- Start Page Content -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content-card">
-                                <div class="route-display">
-                                    <div class="route-container">
-                                        <div class="route-line"></div>
-                                        <div class="station-points" id="station-points">
-                                            <!-- Station points will be generated here -->
-                                        </div>
+                <!-- Start Page Content -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content-card">
+                            <div class="route-display">
+                                <div class="route-container">
+                                    <div class="route-line"></div>
+                                    <div class="station-points" id="station-points">
+                                        <!-- Station points will be generated here -->
                                     </div>
-                                </div>
-                                
-                                <div class="station-detail" id="station-detail">
-                                    <!-- Station details will be shown here -->
                                 </div>
                             </div>
                             
-                            <div class="mrt-features">
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <h3>Jadwal Tepat Waktu</h3>
-                                    <p>MRT Jakarta terkenal dengan ketepatan waktu keberangkatan dan kedatangan yang mencapai 99.8%.</p>
+                            <div class="station-detail" id="station-detail">
+                                <!-- Station details will be shown here -->
+                            </div>
+                        </div>
+                        
+                        <div class="mrt-features">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fa fa-clock-o"></i>
                                 </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-couch"></i>
-                                    </div>
-                                    <h3>Aman, Nyaman, dengan MRT Jakarta</h3>
-                                    <p>MRT Jakarta selalu mengutamakan keamanan dan kenyamanan Anda.</p>
+                                <h3>Jadwal Tepat Waktu</h3>
+                                <p>MRT Jakarta terkenal dengan ketepatan waktu keberangkatan dan kedatangan yang mencapai 99.8%.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fa fa-user"></i>
                                 </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <h3>Integrasi Multi-moda</h3>
-                                    <p>Terhubung dengan Transjakarta, KRL, dan LRT untuk mobilitas yang lebih nyaman di Jakarta.</p>
+                                <h3>Aman, Nyaman, dengan MRT Jakarta</h3>
+                                <p>MRT Jakarta selalu mengutamakan keamanan dan kenyamanan Anda.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fa fa-exchange"></i>
                                 </div>
+                                <h3>Integrasi Multi-moda</h3>
+                                <p>Terhubung dengan Transjakarta, KRL, dan LRT untuk mobilitas yang lebih nyaman di Jakarta.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- End Page Content -->
                 </div>
+                <!-- End Page Content -->
             </div>
-            <!-- End Container fluid -->
-            
-            <!-- footer -->
-            <footer class="footer"> © 2025 JakLine by <a href="">JakLine.com</a> </footer>
-            <!-- End footer -->
         </div>
-        <!-- End Page wrapper -->
+        <!-- End Container fluid -->
+        
+        <!-- footer -->
+        <footer class="footer"> © 2025 JakLine by <a href="">JakLine.com</a> </footer>
+        <!-- End footer -->
+    </div>
+    <!-- End Page wrapper -->
     </div>
     <!-- End Wrapper -->
     
@@ -770,17 +768,17 @@
                 
                 <div class="schedule-container">
                     <div class="schedule-card">
-                        <h3><i class="fas fa-train"></i> Keberangkatan</h3>
+                        <h3><i class="fa fa-train"></i> Keberangkatan</h3>
                         <div class="schedule-item">
                             <div class="direction">
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fa fa-arrow-right"></i>
                                 <span>Ke Bundaran HI</span>
                             </div>
                             <div class="time">${j.berangkat.keBundaranHI || '-'}</div>
                         </div>
                         <div class="schedule-item">
                             <div class="direction">
-                                <i class="fas fa-arrow-right"></i>
+                                <i class="fa fa-arrow-right"></i>
                                 <span>Ke Lebak Bulus</span>
                             </div>
                             <div class="time">${j.berangkat.keLebakBulus || '-'}</div>
@@ -788,17 +786,17 @@
                     </div>
                     
                     <div class="schedule-card">
-                        <h3><i class="fas fa-train"></i> Kedatangan</h3>
+                        <h3><i class="fa fa-train"></i> Kedatangan</h3>
                         <div class="schedule-item">
                             <div class="direction">
-                                <i class="fas fa-arrow-left"></i>
+                                <i class="fa fa-arrow-left"></i>
                                 <span>Dari Bundaran HI</span>
                             </div>
                             <div class="time">${j.datang.dariBundaranHI || '-'}</div>
                         </div>
                         <div class="schedule-item">
                             <div class="direction">
-                                <i class="fas fa-arrow-left"></i>
+                                <i class="fa fa-arrow-left"></i>
                                 <span>Dari Lebak Bulus</span>
                             </div>
                             <div class="time">${j.datang.dariLebakBulus || '-'}</div>
