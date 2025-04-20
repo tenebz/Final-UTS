@@ -87,8 +87,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JakLine – Cari Jadwal MRT</title>
 
-  <!--  BOOTSTRAP 5  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!--  BOXICONS  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
@@ -104,7 +102,6 @@
     }
 
     body {
-      font-family: "Inter", sans-serif;
       background-color: #f7f9fc;
       color: #12263a;
     }
@@ -196,9 +193,9 @@
           </div>
         </nav>
         <!--  TITLE  -->
-        <h1 class="display-5 fw-semibold mb-4">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
+        <h1 class="display-5 fw-bold mb-4"style="color:rgb(235, 229, 229);">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
         <!--  TRAIN IMAGE  -->
-       <img src="images/MRT.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
+        <img src="images/MRT.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
       </div>
     </section>
 
@@ -233,7 +230,7 @@
     </section>
 
     <!--  ===== FOOTER  ===== -->
-    <footer class="text-center mt-5 mb-4 small text-muted">JakLine</footer>
+    <footer class="text-center mt-5 mb-4 small text-muted">© 2025 JakLine by JakLine.com</footer>
   </div>
 
   <!--  ===== SCRIPTS  ===== -->
