@@ -25,15 +25,13 @@
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         #gmaps-simple {
             height: 600px;
             width: 100%;
             border-radius: 8px;
         }
-        
+
         .zoom-mrt {
             margin-bottom: 10px;
             background-color: #28a745;
@@ -268,8 +266,7 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <?php
-         include 'leftbar.php';?>
+        <?php include 'leftbar.php';?>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -299,22 +296,6 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Weather widget -->
-                        <div class="weather-widget">
-                            <div class="weather-icon">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
-                            <div class="weather-info">
-                                <p class="weather-temp" id="weather-temp">29°C</p>
-                                <span class="weather-desc">Partly Cloudy, Jakarta</span>
-                            </div>
-                            <div class="text-muted">
-                                <small>Updated: <span id="weather-time">10:30 AM</span></small>
-                            </div>
-                        </div>
-
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Statiun MRT</h4>
@@ -329,7 +310,7 @@
                                     <!-- Station Info Panel -->
                                     <div class="station-info-panel" id="station-info-panel">
                                         <div class="info-header">
-                                            <h4><i class="fas fa-subway me-2"></i>MRT Stations</h4>
+                                            <h4><i class="fa fa-subway me-2"></i>MRT Stations</h4>
                                             <button class="btn-close btn-close-white" id="close-info"></button>
                                         </div>
                                         <div class="info-body">
@@ -530,7 +511,7 @@
                 <div class="station-item" data-station-id="${station.id}">
                     <div class="station-name">${station.name}</div>
                     <div class="station-details">
-                        <i class="fas fa-exchange-alt me-1"></i>${station.details.connections}
+                        <i class="fa fa-exchange-alt me-1"></i>${station.details.connections}
                     </div>
                 </div>
             `;
