@@ -28,13 +28,104 @@
     <link href="css/pages/dashboard1.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <style>
+        /*  ===== GENERAL RESET  =====  */
+        :root {
+            --primary: #103d5e;
+            --primary-dark: #07263d;
+            --primary-light: #ebf3fa;
+            --accent: #0d6efd;
+            --radius: 0.75rem;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #12263a;
+        }
+
+        /*  ===== HERO SECTION  ===== */
+        .hero {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero__skyline {
+            position: absolute;
+            inset: 0;
+            background: url("assets/img/skyline.svg") center/cover no-repeat;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .hero__train {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /*  ===== SEARCH WRAPPER  ===== */
+        .search-wrapper {
+            margin-top: -3.5rem; /* Pull up over white section */
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+
+        .search-wrapper .input-group {
+            overflow: hidden;
+            border-radius: var(--radius);
+        }
+
+        .search-wrapper input.form-control {
+            border: none;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+        }
+
+        .search-wrapper .btn-search {
+            background: var(--accent);
+            color: #fff;
+            padding: 0 2.5rem;
+        }
+
+        /*  ===== ACTION CARDS  ===== */
+        .action-card {
+            border: 1px solid #e1e7ec;
+            border-radius: var(--radius);
+            transition: all 0.25s ease;
+            height: 100%;
+        }
+
+        .action-card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .action-card i {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        /*  ===== UTILITIES  ===== */
+        .z-top {
+            position: relative;
+            z-index: 5;
+        }
+    </style>
 </head>
 
 
@@ -108,10 +199,15 @@
 
     /*  ===== HERO SECTION  ===== */
     .hero {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
       background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary) 100%);
       color: #fff;
       overflow: hidden;
-      position: relative;
     }
 
     .hero__skyline {
@@ -182,20 +278,10 @@
     <section class="hero pb-4">
       <div class="hero__skyline"></div>
       <div class="container z-top pt-5 text-center">
-        <!--  NAVBAR INSIDE HERO  -->
-        <nav class="navbar navbar-expand-lg navbar-dark mb-5">
-          <div class="container-fluid justify-content-end">
-            <ul class="navbar-nav gap-lg-4">
-              <li class="nav-item"><a class="nav-link active" href="#">Jadwal</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Rute</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
-            </ul>
-          </div>
-        </nav>
         <!--  TITLE  -->
-        <h1 class="display-5 fw-bold mb-4"style="color:rgb(235, 229, 229);">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
+        <h1 class="display-5 fw-bold mb-4" style="color:rgb(235, 229, 229);">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
         <!--  TRAIN IMAGE  -->
-        <img src="images/MRT.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
+        <img src="images/mrt.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
       </div>
     </section>
 
@@ -217,7 +303,7 @@
           </a>
         </div>
         <div class="col-6">
-          <a href="rute.php" class="d-block text-decoration-none text-reset h-100">
+          <a href="map.php" class="d-block text-decoration-none text-reset h-100">
             <div class="p-3 action-card d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center">
                 <i class='bx bx-map'></i> <span class="fw-medium">Tata Rute</span>
