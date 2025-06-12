@@ -78,28 +78,158 @@
 
         /*  ===== SEARCH WRAPPER  ===== */
         .search-wrapper {
-            margin-top: -3.5rem; /* Pull up over white section */
+            margin-top: -3.5rem;
             background: #fff;
             border-radius: var(--radius);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
             padding: 2rem;
         }
 
-        .search-wrapper .input-group {
-            overflow: hidden;
-            border-radius: var(--radius);
+        .search-container {
+            position: relative;
         }
 
-        .search-wrapper input.form-control {
-            border: none;
+        .search-input-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
             padding: 1rem 1.25rem;
+            border: 2px solid #e1e7ec;
+            border-radius: var(--radius);
             font-size: 1rem;
+            transition: all 0.3s ease;
         }
 
-        .search-wrapper .btn-search {
-            background: var(--accent);
-            color: #fff;
-            padding: 0 2.5rem;
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+            outline: none;
+        }
+
+        .search-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        .search-suggestions.active {
+            display: block;
+        }
+
+        .suggestion-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .suggestion-item:hover {
+            background: var(--primary-light);
+        }
+
+        .search-filters {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-chip {
+            padding: 0.5rem 1rem;
+            background: var(--primary-light);
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            color: var(--primary);
+        }
+
+        .filter-chip:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .filter-chip.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .quick-action-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--primary-light);
+            border-radius: var(--radius);
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .quick-action-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.25rem 0.75rem;
+            background: #22c55e;
+            color: white;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .live-updates {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #fff3cd;
+            border-radius: var(--radius);
+            border: 1px solid #ffeeba;
+        }
+
+        .live-updates h4 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .update-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #856404;
+        }
+
+        .update-item i {
+            font-size: 1rem;
         }
 
         /*  ===== ACTION CARDS  ===== */
@@ -287,33 +417,111 @@
 
     <!--  ===== SEARCH BLOCK  ===== -->
     <section class="search-wrapper mx-auto" style="max-width: 900px;">
-      <form action="search.php" method="get" class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Cari Jadwal MRT" />
-        <button class="btn btn-search" type="submit">Cari</button>
-      </form>
-      <div class="row mt-4 g-3">
-        <div class="col-6">
-          <a href="jadwal.php" class="d-block text-decoration-none text-reset h-100">
-            <div class="p-3 action-card d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <i class='bx bx-calendar'></i> <span class="fw-medium">Lihat Jadwal</span>
-              </div>
-              <i class='bx bx-chevron-right'></i>
+        <div class="search-container">
+            <div class="search-input-group">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" id="fromStation" placeholder="Stasiun keberangkatan" autocomplete="off">
+                    <div class="search-suggestions" id="fromSuggestions"></div>
+                </div>
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" id="toStation" placeholder="Stasiun tujuan" autocomplete="off">
+                    <div class="search-suggestions" id="toSuggestions"></div>
+                </div>
+                <button class="btn btn-search" type="button">
+                    <i class='bx bx-search'></i> Cari Rute
+                </button>
             </div>
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="map.php" class="d-block text-decoration-none text-reset h-100">
-            <div class="p-3 action-card d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <i class='bx bx-map'></i> <span class="fw-medium">Tata Rute</span>
-              </div>
-              <i class='bx bx-chevron-right'></i>
+
+            <div class="search-filters">
+                <button class="filter-chip active" data-filter="all">Semua Rute</button>
+                <button class="filter-chip" data-filter="direct">Langsung</button>
+                <button class="filter-chip" data-filter="transfer">Dengan Transfer</button>
             </div>
-          </a>
+
+            <div class="live-updates">
+                <h4><i class='bx bx-broadcast'></i> Update Langsung</h4>
+                <div class="update-item">
+                    <i class='bx bx-time'></i>
+                    <span>MRT beroperasi normal di semua rute</span>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <a href="jadwal.php" class="quick-action-btn">
+                    <i class='bx bx-calendar'></i>
+                    <span>Jadwal Hari Ini</span>
+                </a>
+                <a href="map.php" class="quick-action-btn">
+                    <i class='bx bx-map'></i>
+                    <span>Peta Rute</span>
+                </a>
+                <a href="fares.php" class="quick-action-btn">
+                    <i class='bx bx-money'></i>
+                    <span>Info Tarif</span>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
+
+    <!-- Add modern JavaScript for enhanced functionality -->
+    <script>
+        // Station suggestions data (this would typically come from a database)
+        const stations = [
+            'Lebak Bulus', 'Fatmawati', 'Cipete Raya', 'Haji Nawi', 
+            'Blok A', 'Blok M', 'ASEAN', 'Senayan', 'Istora', 
+            'Bendungan Hilir', 'Setiabudi', 'Dukuh Atas', 'Bundaran HI'
+        ];
+
+        // Initialize search functionality
+        document.querySelectorAll('.search-input').forEach(input => {
+            const suggestionsDiv = input.nextElementSibling;
+            
+            input.addEventListener('input', (e) => {
+                const value = e.target.value.toLowerCase();
+                if (value.length < 2) {
+                    suggestionsDiv.classList.remove('active');
+                    return;
+                }
+
+                const matches = stations.filter(station => 
+                    station.toLowerCase().includes(value)
+                );
+
+                if (matches.length > 0) {
+                    suggestionsDiv.innerHTML = matches
+                        .map(station => `<div class="suggestion-item">${station}</div>`)
+                        .join('');
+                    suggestionsDiv.classList.add('active');
+                } else {
+                    suggestionsDiv.classList.remove('active');
+                }
+            });
+
+            // Handle suggestion clicks
+            suggestionsDiv.addEventListener('click', (e) => {
+                if (e.target.classList.contains('suggestion-item')) {
+                    input.value = e.target.textContent;
+                    suggestionsDiv.classList.remove('active');
+                }
+            });
+
+            // Close suggestions when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!input.contains(e.target) && !suggestionsDiv.contains(e.target)) {
+                    suggestionsDiv.classList.remove('active');
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                document.querySelector('.filter-chip.active').classList.remove('active');
+                chip.classList.add('active');
+                // Here you would typically filter the results
+            });
+        });
+    </script>
 
     <!--  ===== FOOTER  ===== -->
     <footer class="text-center mt-5 mb-4 small text-muted">© 2025 JakLine by JakLine.com</footer>
