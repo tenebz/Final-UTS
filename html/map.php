@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!- Tell the browser to be responsive to screen width ->
+    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
         content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, AdminWrap lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, AdminWrap lite design, AdminWrap lite dashboard bootstrap 5 dashboard template">
@@ -197,10 +197,10 @@
             background-color: #007bff;
         }
         .black-line {
-            background-color:rgb(123, 1, 199);
+            background-color:rgb(0, 0, 0);
         }
         .purple-line {
-            background-color: #007bff;
+            background-color:rgb(123, 1, 199);
         }
         
         .weather-widget {
