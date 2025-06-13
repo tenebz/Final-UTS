@@ -196,6 +196,12 @@
         .blue-line {
             background-color: #007bff;
         }
+        .black-line {
+            background-color:rgb(123, 1, 199);
+        }
+        .purple-line {
+            background-color: #007bff;
+        }
         
         .weather-widget {
             background-color: white;
@@ -302,7 +308,7 @@
                                 <div class="d-flex mb-3">
                                     <button class="zoom-mrt mr-2" onclick="zoomToMRT()">Zoom Jalur Hijau MRT</button>
                                     <button class="btn-mrt btn-primary mx-2" onclick="zoomToMap()">View All</button>
-                                    <button class="btn-mrt btn-info mx-2" id="toggle-stations">Station Info</button>
+                                    <button class="btn-mrt btn-info mx-2" id="toggle-stations">Station MRT Info</button>
                                 </div>
                                 <div id="map-container">
                                     <div id="gmaps-simple"></div>
@@ -325,11 +331,15 @@
                                         <h6 class="mb-2">Legend</h6>
                                         <div class="legend-item">
                                             <div class="legend-color green-line"></div>
-                                            <span>Jalur Hijau (Operational)</span>
+                                            <span>Jalur Hijau (Rute MRT)</span>
                                         </div>
                                         <div class="legend-item">
-                                            <div class="legend-color blue-line"></div>
-                                            <span>Jalur Biru (Planned)</span>
+                                            <div class="legend-color black-line"></div>
+                                            <span>Jalur Hitam (Rute Railink)</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color purple-line"></div>
+                                            <span>Jalur Ungu (Rute Angkasa Pura)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -528,6 +538,63 @@
             map.setView([station.lat, station.lng], 15);
             stationMarkers[stationId].openPopup();
         });
+
+        const railinkStations = [
+            { name: "SHIA (Soekarno-Hatta Airport)", lat: -6.1274, lng: 106.6522 },
+            { name: "Batu Ceper", lat: -6.1700, lng: 106.6250 },
+            { name: "Rawa Buaya", lat: -6.1420, lng: 106.6660 },
+            { name: "Duri", lat: -6.1464, lng: 106.8255 },
+            { name: "BNI City", lat: -6.2013, lng: 106.81898 },
+            { name: "Manggarai", lat: -6.2220, lng: 106.8460 }
+        ];
+
+        const terminals = [
+            { name: "Terminal 1", lat: -6.1270, lng: 106.6570 },
+            { name: "Terminal 2", lat: -6.1222, lng: 106.6525 },
+            { name: "Terminal 3", lat: -6.120494, lng: 106.660568 }
+        ];
+
+        // Tambahkan marker Railink (warna hitam)
+        const railinkCoords = [];
+        railinkStations.forEach(station => {
+            railinkCoords.push([station.lat, station.lng]);
+            L.circleMarker([station.lat, station.lng], {
+                radius: 6,
+                fillColor: '#000000',
+                color: '#000000',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.9
+            }).addTo(map).bindPopup(`<b>${station.name}</b>`);
+        });
+
+        // Hubungkan Railink dengan garis hitam
+        L.polyline(railinkCoords, {
+            color: '#000000',
+            weight: 3,
+            opacity: 0.8
+        }).addTo(map);
+
+        // Tambahkan marker Terminal (warna ungu)
+        const terminalCoords = [];
+        terminals.forEach(terminal => {
+            terminalCoords.push([terminal.lat, terminal.lng]);
+            L.circleMarker([terminal.lat, terminal.lng], {
+                radius: 6,
+                fillColor: '#800080',
+                color: '#800080',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.9
+            }).addTo(map).bindPopup(`<b>${terminal.name}</b>`);
+        });
+
+        // Hubungkan Terminal dengan garis ungu
+        L.polyline(terminalCoords, {
+            color: '#800080',
+            weight: 3,
+            opacity: 0.8
+        }).addTo(map);
         
         // Zoom to Green Line function (original function name kept)
         function zoomToMRT() {
