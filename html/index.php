@@ -409,7 +409,7 @@
       <div class="hero__skyline"></div>
       <div class="container z-top pt-5 text-center">
         <!--  TITLE  -->
-        <h1 class="display-5 fw-bold mb-4" style="color:rgb(235, 229, 229);">Temukan Jadwal MRT<br />Antar Daerah di Kotamu</h1>
+        <h1 class="display-5 fw-bold mb-4" style="color:rgb(235, 229, 229);">Temukan Jadwal Transportasi<br />Antar Daerah di Kotamu</h1>
         <!--  TRAIN IMAGE  -->
         <img src="images/mrt.png" alt="gambar" class="hero__train mb-4" style="max-width: 250px; width: 50%; height: auto;" />
       </div>
