@@ -161,6 +161,16 @@
   .chat-input button:hover {
     background-color: #4338ca;
   }
+
+  .bot p ul {
+    margin: 0.5rem 0 0.5rem 1.5rem;
+    padding-left: 20px;
+  }
+
+  .bot p li {
+    margin-bottom: 4px;
+  }
+
 </style>
 
 <script>
@@ -170,7 +180,7 @@
   messageDiv.classList.add('message', sender);
 
   const messageText = document.createElement('p');
-  messageText.textContent = text;
+  messageText.innerHTML = text;
 
   messageDiv.appendChild(messageText);
   chatBox.appendChild(messageDiv);
