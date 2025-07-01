@@ -11,7 +11,13 @@
                             class="fa fa-reddit-alien"></i><span class="hide-menu">Chatbot</span></a>
                 </li>
                 <li> <a class="waves-effect waves-dark" href="Jadwal.php" aria-expanded="false"><i
-                            class="fa fa-table"></i><span class="hide-menu">Jadwal MRT</span></a>
+                            class="fa fa-bus"></i><span class="hide-menu">Jadwal MRT</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="railink.php" aria-expanded="false"><i
+                            class="fa fa-train"></i><span class="hide-menu">Jadwal Railink</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="angkasa.php" aria-expanded="false"><i
+                            class="fa fa-plane"></i><span class="hide-menu">Jadwal Angkasa Pura</span></a>
                 </li>
                 <li> <a class="waves-effect waves-dark" href="map.php" aria-expanded="false"><i
                             class="fa fa-globe"></i><span class="hide-menu">Map</span></a>
